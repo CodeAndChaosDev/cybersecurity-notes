@@ -1,3 +1,5 @@
+# The CIA Triad
+
 The CIA Triad is a foundational model in IT security, consisting of three core principles: Confidentiality, Integrity, and Availability. The acronym ‘CIA,’ while reminiscent of the Central Intelligence Agency, pertains solely to Information Technology and emphasizes the importance of securing data from unauthorized access, ensuring data accuracy, and maintaining system uptime.
 
 Confidentiality involves protecting sensitive information from unauthorized disclosure, often achieved through encryption and access control measures. Integrity refers to the assurance that information has remained unchanged during transmission, which is critical for data reliability. This can be verified through methods such as hashing and digital signatures. Lastly, Availability denotes the reliability of systems, ensuring users have continuous access to data and resources, often bolstered by fault-tolerant system designs and routine maintenance to update and protect infrastructure.
@@ -32,3 +34,28 @@ The CIA Triad represents a balancing act for IT professionals, where implementin
     
 
 The insights outlined above provide a comprehensive understanding of the CIA Triad’s relevance in modern IT security. By leveraging these principles, organizations can not only safeguard their assets but also enhance their overall operational effectiveness in a digital age characterized by constant threats and evolving technological landscapes. The delicate balance of ensuring Confidentiality, Integrity, and Availability underlines the essential nature of these principles in developing effective IT security strategies.
+
+## Even Further
+
+### Authenticity
+
+  * Authentic means not fraudulent or counterfeit. This means we need to ensure that such files is from claimed source.
+
+ ### Nonrepudiation
+
+  * Repudiate means refusing to recognize the validity of something. Nonrepudiation ensures that the original source cannot deny that they are source of a particular document/file/data.
+
+
+  # Parkerian Hexad
+
+   - In 1998, Donn Parker proposed the Parkerian Hexad:
+
+        * Availability
+        * Utility
+        * Integrity
+        * Authenticity
+        * Confidentiality
+        * Possession
+
+- : Utility - Focus on the usefulness of the information.
+- : Posession - This security element requires that we protect the information from unauthorized taking, copying, or controlling.
