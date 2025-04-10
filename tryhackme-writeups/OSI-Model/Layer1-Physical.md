@@ -1,0 +1,2 @@
+# Layer 1 - Physical
+Put simply, this layer references the physical components of the hardware used in networking and is the lowest layer that you will find. Devices use electrical signals to transfer data between each other in a binary numbering system (1's and 0's).
