@@ -13,6 +13,8 @@ This content discusses various designs of Local Area Networks (LAN), known as to
 • More expensive due to increased cabling and equipment. 
 • Higher maintenance needed as the network grows. 
 • A failure of the central device affects all connected devices. 
+• A Major flaw: If the switch goes down then the network will no longer work since every packet goes trough it,
+
 
 2. Bus Topology 
 • All devices connect to a single backbone cable. 
@@ -22,7 +24,7 @@ This content discusses various designs of Local Area Networks (LAN), known as to
 • Data congestion can occur, leading to slow performance. 
 • Troubleshooting is difficult due to all data traveling the same route. 
 • If the backbone cable fails, all devices lose connectivity. 
-
+• A Major Flaw: It can't handle a large amount of data. (Sending a large amount of packets as quickly as possible, might take down the network).
 
 ![alt text](image.png)
 
@@ -34,6 +36,7 @@ This content discusses various designs of Local Area Networks (LAN), known as to
 • Disadvantages: 
 • If any device or connection fails, the entire network breaks down. 
 • Data may take longer to reach its destination as it may pass through multiple devices first. 
+• Major Flaw is if a devices goes down or a cable is broken, then data will no longer be passed.
 
 ![alt text](image-1.png)
 
