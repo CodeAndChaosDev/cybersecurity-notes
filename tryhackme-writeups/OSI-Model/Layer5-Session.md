@@ -1,0 +1,3 @@
+# Session Layer Functions
+
+The session layer (layer 5) establishes and maintains connections between computers after the data is formatted by the presentation layer (layer 6). When a connection is established, a session is created. It closes unused or lost connections and can include "checkpoints" to save bandwidth by only resending the latest data. Sessions are unique, preventing data from traveling across different sessions.
