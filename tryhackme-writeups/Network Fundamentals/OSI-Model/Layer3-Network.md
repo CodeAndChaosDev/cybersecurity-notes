@@ -5,7 +5,9 @@ The third layer of the OSI model, known as the network layer, is responsible for
 ## Factors influencing the chosen route include: 
 
 • The shortest path with the fewest devices. 
+
 • The most reliable path with minimal packet loss. 
+
 • The fastest physical connection type (copper vs. fiber). 
 
 Communication at this layer uses IP addresses, such as 192. 168. 1. 100, and devices like routers are considered Layer 3 devices because they operate at this layer.

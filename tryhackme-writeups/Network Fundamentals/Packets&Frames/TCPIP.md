@@ -7,9 +7,13 @@ The three-way handshake is the term given for the process used to establish a co
 ![alt text](image-6.png)
 
 ## Key Points: 
+
 • TCP is similar to the OSI model and consists of four layers: Application, Transport, Internet, and Network Interface. 
+
 • Information is added to each layer through a process called encapsulation, which has a reverse process called decapsulation. 
+
 • TCP is connection-based, requiring a connection between client and server before data is sent. 
+
 • It guarantees data receipt through a method called the Three-way handshake. 
 
 • TCP packets contain various sections of information known as headers that are added from encapsulation. Let's explain some of the crucial headers in the table below(from tryhackme):

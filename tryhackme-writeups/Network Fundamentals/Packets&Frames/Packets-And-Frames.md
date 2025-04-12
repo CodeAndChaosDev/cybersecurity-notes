@@ -6,10 +6,15 @@ Packets and frames are essential components in data communication. They are smal
 ![alt text](image.png)
 
 ## Key Points 
+
 • A frame operates at layer 2 (data link layer) and lacks IP address information, likened to an envelope within another envelope. 
+
 • The process of wrapping data in this way is known as encapsulation; packets are associated with IP addresses while frames do not carry this information. 
+
 • Using packets allows for efficient data transmission across networks, reducing bottleneck risks compared to sending large messages. 
+
 • For instance, when loading an image, it is sent in multiple packets and then reconstructed on the user’s computer. 
+
 • Each packet has a unique structure based on its type, following standards that dictate how devices handle them. 
 
 ## Some Notable Headers

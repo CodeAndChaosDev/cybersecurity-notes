@@ -6,50 +6,80 @@ This content discusses various designs of Local Area Networks (LAN), known as to
 ## Key Points 
 
 1. Star Topology 
+
 • Devices connect to a central device like a switch or hub. 
+
 • Advantages: 
+
 • Reliable and scalable, making it easy to add devices. 
+
 • Disadvantages: 
+
 • More expensive due to increased cabling and equipment. 
+
 • Higher maintenance needed as the network grows. 
+
 • A failure of the central device affects all connected devices. 
-• A Major flaw: If the switch goes down then the network will no longer work since every packet goes trough it,
+
+• A Major flaw: If the switch goes down then the network will no longer work since every packet goes trought it.
 
 
 2. Bus Topology 
+
 • All devices connect to a single backbone cable. 
+
 • Advantages: 
+
 • Cost-effective and easy to set up. 
+
 • Disadvantages: 
+
 • Data congestion can occur, leading to slow performance. 
+
 • Troubleshooting is difficult due to all data traveling the same route. 
+
 • If the backbone cable fails, all devices lose connectivity. 
+
 • A Major Flaw: It can't handle a large amount of data. (Sending a large amount of packets as quickly as possible, might take down the network).
 
 ![alt text](image.png)
 
 3. Ring Topology 
+
 • Devices connect in a loop, sending data around until it reaches the destination. 
+
 • Advantages: 
+
 • Less cabling required; easier troubleshooting since data moves in one direction. 
+
 • Reduced chances of bottlenecks compared to bus topology. 
+
 • Disadvantages: 
+
 • If any device or connection fails, the entire network breaks down. 
+
 • Data may take longer to reach its destination as it may pass through multiple devices first. 
+
 • Major Flaw is if a devices goes down or a cable is broken, then data will no longer be passed.
 
 ![alt text](image-1.png)
 
 
 4. What is a Switch? 
+
 • A switch connects multiple devices in a network via ports and is common in larger networks. 
+
 • More efficient than hubs because switches direct data only to the intended device, minimizing unnecessary network traffic. 
+
 
 ![alt text](image-2.png)
 
 5. What is a Router? 
+
 • Routers connect different networks and facilitate the transfer of data between them. 
+
 • They establish paths for data to travel, ensuring successful delivery across diverse network connections. 
+
 
 
 ![alt text](image-3.png)

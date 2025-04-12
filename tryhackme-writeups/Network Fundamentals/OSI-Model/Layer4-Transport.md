@@ -10,11 +10,15 @@ TCP focuses on reliability. It maintains a constant connection between devices d
 ![alt text](image-1.png)
 
 ### Advantages of TCP: 
+
 • Guarantees data accuracy. 
+
 • Synchronizes devices to prevent data overload. 
 
 ### Disadvantages of TCP: 
+
 • Requires a reliable connection; data cannot be used if one part is missing. 
+
 • Slower due to extra processes for reliability. 
 
 TCP is ideal for file sharing, internet browsing, and email, where complete data is essential. 
@@ -27,11 +31,15 @@ UDP is simpler and faster than TCP but lacks error checking or delivery guarante
 ![alt text](image-3.png)
 
 ### Advantages of UDP: 
+
 • Much faster than TCP. 
+
 • Flexibility for controlling packet transmission. 
 
 ### Disadvantages of UDP: 
+
 • Unstable connections may lead to poor user experiences. 
+
 • No constant connection means data can be lost. 
 
 UDP works well for small data packets and applications like device discovery or video streaming where some data loss is acceptable.
