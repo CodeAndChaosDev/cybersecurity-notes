@@ -3,7 +3,7 @@
 ## Introduction 
 The domain hierarchy explains the structure of domain names, illustrating how they are organized from broader categories to specific names. 
 
-    ![From Tryhackme](image.png)
+![alt text](image.png)
 
 ## Key Points 
 • TLD (Top-Level Domain): This is the last part of a domain name, like .com in tryhackme.com. There are two types: gTLD (Generic) and ccTLD (Country Code). gTLDs indicate the purpose (e. g. , .com for commercial), while ccTLDs indicate location (e. g. , . ca for Canada). New gTLDs are constantly being created. 
