@@ -2,6 +2,8 @@
 
 Cookies are small pieces of data saved on your computer when you receive a "Set-Cookie" header from a web server. They help remind the web server about your identity, personal settings, or previous visits since HTTP does not remember past requests. 
 
+![From Try Hackme](image-2.png)
+
 ## Key Points: 
 • Cookies are commonly used for website authentication. 
 
@@ -13,7 +15,7 @@ Cookies are small pieces of data saved on your computer when you receive a "Set-
 
 • In developer tools, use the "Network" tab to see all resource requests and the "Cookies" tab for cookie details. 
 
-![From Try Hackme](image-2.png)
+
 
 ## Conclusion 
 
