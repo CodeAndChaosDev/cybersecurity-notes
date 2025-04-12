@@ -47,5 +47,7 @@ Content-Length: 98
 
 • This response includes the protocol version, status code, server info, date, content type, and length of the response, followed by the requested data. 
 
+![From Try Hack Me](image-1.png)
+
 ## Conclusion 
 Understanding URLs and web requests is crucial for navigating and interacting with websites effectively.
