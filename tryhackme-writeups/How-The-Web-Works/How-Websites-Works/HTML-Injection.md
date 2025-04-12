@@ -12,5 +12,8 @@ HTML Injection is a security vulnerability that occurs when a website displays u
 
 • Developers should always sanitize user input, such as stripping out HTML tags, to prevent risks. 
 
+
+![From Try Hack Me](image.png)
+
 ## Conclusion: 
 Always be cautious with user input to protect against vulnerabilities like HTML injection.
