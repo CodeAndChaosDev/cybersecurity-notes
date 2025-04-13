@@ -14,3 +14,4 @@ This content discusses the Windows Registry and its significance.
 
 • The Registry Editor (regedit) is one available tool to view or edit the registry. 
 
+• regedt32.exe or regedit.
