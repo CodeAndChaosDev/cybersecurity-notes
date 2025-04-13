@@ -20,5 +20,7 @@ The Windows operating system has been a major player in computing since 1985, do
 
 • Update: Microsoft will support Windows 10 at least until October 14, 2025, and Windows 11 was launched on October 5, 2021. 
 
+• The encription you can enable of the PRO version is BitLocker which is not accessible in the Home Version.
+
 ## Conclusion 
 Windows continues to evolve, with ongoing improvements and new versions addressing both user needs and security challenges.
