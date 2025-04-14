@@ -46,6 +46,8 @@ Active Directory Domain Services (AD DS) is essential for managing various objec
 
 • Domain Controllers: All Domain Controllers. 
 
+![Try Hack Me](image-1.png)
+
 4. Active Directory Users and Computers: 
 
 • To manage objects in Active Directory, log into the Domain Controller and open "Active Directory Users and Computers" from the start menu. 
@@ -53,6 +55,10 @@ Active Directory Domain Services (AD DS) is essential for managing various objec
 • This interface displays users, computers, and groups organized in Organizational Units (OUs) which categorize users and machines. 
 
 • OUs are typically structured around a business's departments and allow specific policies to be applied based on organizational roles. 
+
+
+![Try Hack Me](image-2.png)
+
 
 5. Default Containers: 
 
