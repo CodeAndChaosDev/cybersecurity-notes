@@ -11,11 +11,17 @@ The __OSI__ (Open Systems Interconnection) model is a framework created by the I
 2. Layer 1: Physical Layer 
 • This layer is concerned with the physical connection between devices, including the medium used for transmission (like wires or wireless signals). Common examples of physical medium include Ethernet cables and WiFi bands, which transmit data using electrical or optical signals. 
 
+![alt text](image-1.png)
+
 3. Layer 2: Data Link Layer 
 • The data link layer allows data transfer between devices on the same network segment. It establishes rules for communication between systems in that segment. Common examples include Ethernet (802. 3) and WiFi (802. 11), and it uses MAC addresses for device identification. 
 
+![alt text](image-2.png)
+
 4. Layer 3: Network Layer 
 • This layer is responsible for sending data between different networks. It handles logical addressing and routing, ensuring packets find the best path to travel between various networks. Protocols like IP and ICMP operate at this level. 
+
+![alt text](image-3.png)
 
 5. Layer 4: Transport Layer 
 • The transport layer manages end-to-end communication between applications on different hosts. It supports functions like flow control and error correction, with protocols such as TCP and UDP used at this layer. 
