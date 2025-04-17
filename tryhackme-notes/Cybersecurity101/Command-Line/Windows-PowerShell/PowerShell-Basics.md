@@ -67,3 +67,20 @@ PS C:\Users\captain&gt; Install-Module -Name "PowerShellGet"
 ## Conclusion 
 
 Understanding PowerShell cmdlets, their structure, how to list and filter them, and the use of help commands and aliases significantly enhances productivity. Additionally, the ability to find and install new cmdlets from online repositories allows for extended functionality, making PowerShell a powerful tool for advanced data manipulation and automation.
+
+
+# Try Hack Me Write Up
+
+## Questions: 
+
+- Q: How would you retrieve a list of commands that start with the verb Remove?
+
+- A: Get-Command -Name Remove*
+
+- Q: What Cmdlet has its traditional counterpart echo as an alias?
+
+- A: Write-Output
+
+- Q: What is the command to retrieve some example usage for the cmdlet New-LocalUser?
+
+- A: Get-Help New-LocalUser -examples
