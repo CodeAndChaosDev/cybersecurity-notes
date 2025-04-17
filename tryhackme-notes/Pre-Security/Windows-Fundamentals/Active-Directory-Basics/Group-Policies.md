@@ -39,7 +39,10 @@ If a GPO is applied to the root domain, it will affect all computers, but non-co
 
 ![alt text](image-5.png)
 
+![alt text](image-6.png)
 
+9. Network:
+GPOs are distributed to the network via a network share called SYSVOL, which is stored in the DC. All users in a domain should typically have access to this share over the network to sync their GPOs periodically. The SYSVOL share points by default to the __C:\Windows\SYSVOL\sysvol\\__ directory on each of the DCs in our network.
 
 ## Conclusion: 
 Creating and managing GPOs is essential for maintaining security and efficiency in a networked environment. Properly configured GPOs can help restrict user access to sensitive areas like the Control Panel and ensure that workstations lock automatically after a specified period of inactivity. If GPOs do not take effect, remember to use the `gpupdate /force` command to refresh the policies.
