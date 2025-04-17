@@ -5,3 +5,5 @@
 
  There are 7 Layers in the OSI Model:
  ![alt text](image.png)
+
+ ![alt text](image-5.png)
