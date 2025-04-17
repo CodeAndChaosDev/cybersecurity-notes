@@ -15,6 +15,9 @@ __Example Output__:
 
 • Displays Windows build, version, edition, and installation date. 
 
+![Try Hack Me](image.png)
+
+
 2. Get-LocalUser Cmdlet: 
 
 • Lists all local user accounts on the system with their status and descriptions. 
@@ -25,20 +28,27 @@ __Example Output__:
 
 • Shows names, enablement status, and descriptions for users like Administrator and Guest. 
 
+![Try Hack Me](image-1.png)
+
+
 3. Get-NetIPConfiguration Cmdlet: 
 
 • Similar to ipconfig, this cmdlet provides details about network interfaces, including IP addresses and DNS servers. 
 
-Example Output: 
+__Example Output__: 
 
 • Displays network interface details like IPv4 address, gateway, and DNS servers. 
+
+![Try Hack Me](image-2.png)
 
 4. Get-NetIPAddress Cmdlet: 
 • Shows all IP addresses configured on the system, including inactive ones. 
 
-Example Output: 
+__Example Output__: 
 
 • Provides details about both IPv4 and IPv6 addresses, including state and lifetime. 
+
+![Try Hack Me](image-3.png)
 
 ## Conclusion: 
 These cmdlets enable IT professionals to swiftly obtain vital system and network information through command-line access, improving the management and monitoring of machines.
