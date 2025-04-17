@@ -12,8 +12,6 @@ In Windows domains, users' credentials are stored in Domain Controllers. When us
 • Users are assigned tickets when they log into a service, serving as proof of authentication. 
 
 
-![From Try Hack Me](image-7.png)
-
 __Process__: 
 
 • The user sends their username and a timestamp (encrypted with a key from their password) to the Key Distribution Center (KDC), which is typically found on the Domain Controller. 
@@ -28,7 +26,6 @@ Step 1: Requesting a Ticket Granting Service (TGS):
 
 
 ![From Try Hackme](image-8.png)
-
 
 • The KDC responds with the TGS and a Service Session Key for authenticating the service. 
 
@@ -56,6 +53,9 @@ __Process__:
 • The Domain Controller recalculates the expected response and compares it with the client's response. If they match, authentication is successful; if not, access is denied. 
 
 • The authentication result is sent back to the server and then forwarded to the client. 
+
+
+![From Try Hack Me](image-11.png)
 
 __Note__: 
 
