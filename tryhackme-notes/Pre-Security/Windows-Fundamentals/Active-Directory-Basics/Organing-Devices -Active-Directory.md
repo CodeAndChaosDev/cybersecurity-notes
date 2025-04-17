@@ -1,7 +1,12 @@
 # Organizing Devices in Active Directory 
 
+## Note
+This Note file is related to the Try Hack Me Challenge where we need to organize all computers trough two OUs. 
+
 ## Introduction: 
 When machines join a domain, they typically go into a container called "Computers," except for Domain Controllers (DCs). It's important to organize these devices for better management and policy application. 
+
+![alt text](image-3.png)
 
 ## Key Points: 
 
