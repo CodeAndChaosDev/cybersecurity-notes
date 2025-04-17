@@ -36,6 +36,7 @@ Step 2: Authenticating to the Service:
 • The service validates the TGS using its account’s password hash to check the Service Session Key. 
 
 ![From Try Hack Me](image-9.png)
+![From Try Hackme](image-10.png)
 
 2. NetNTLM Authentication: 
 
