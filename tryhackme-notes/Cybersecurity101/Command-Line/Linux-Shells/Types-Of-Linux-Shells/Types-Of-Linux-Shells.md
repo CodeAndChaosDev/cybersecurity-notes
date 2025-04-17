@@ -14,6 +14,8 @@ user@ubuntu:~$ echo $SHELL
 /bin/bash 
 ``` 
 
+![alt text](image.png)
+
 2. Listing Available Shells 
 
 • You can view all installed shells on your Linux system by typing: 
@@ -38,6 +40,8 @@ user@ubuntu:~$ cat /etc/shells
 /usr/bin/zsh 
 ``` 
 
+![alt text](image-1.png)
+
 3. Switching Shells 
 
 • To switch to a different shell, simply type the shell name: 
@@ -46,6 +50,8 @@ user@ubuntu:~$ cat /etc/shells
 user@ubuntu:~$ zsh 
 user@ubuntu ~ $ 
 ``` 
+
+![alt text](image-2.png)
 
 4. Changing the Default Shell 
 
@@ -91,6 +97,9 @@ customizable command prompts, and syntax highlighting.
 • User Friendliness: Less user-friendly | Most user-friendly | Highly customizable 
 
 • Syntax Highlighting: Not available | Built-in | Available with plugins 
+
+![alt text](image-3.png)
+
 
 ## Conclusion 
 Choosing the best Linux shell depends on your specific needs and preferences. The mentioned shells each have unique features. Compare them to select the shell that best fits your tasks.
