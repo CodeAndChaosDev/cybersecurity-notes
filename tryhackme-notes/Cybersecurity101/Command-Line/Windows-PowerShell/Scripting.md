@@ -64,6 +64,4 @@ These examples illustrate how Invoke-Command is simple yet powerful for automati
 
 - Q: What is the syntax to execute the command Get-Service on a remote computer named "RoyalFortune"? Assume you don't need to provide credentials to establish the connection. [for the sake of this question, avoid the use of quotes (" or ') in your answer]
 
-
-
 - A: Invoke-Command -ComputerName RoyalFortune -ScriptBlock { Get-Service } 
