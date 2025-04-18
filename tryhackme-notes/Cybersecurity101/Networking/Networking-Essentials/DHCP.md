@@ -20,6 +20,8 @@ When you connect your laptop to WiFi at your favorite coffee shop, it automatica
 
 • Acknowledge: The server confirms that the client can use the assigned IP address. 
 
+![alt text](image.png)
+
 5. Packet Exchange Example: In a packet capture example, the client sends a DHCP Discover message, receives an Offer, sends a Request, and finally receives an Acknowledge from the server, resulting in the client being assigned the IP address 192. 168. 66. 133. 
 
 6. Identification of Client Status: During the process, the client starts without any IP configuration, sending packets from 0. 0. 0. 0 to the broadcast address. The server identifies the client’s MAC address and sends configuration details accordingly. 
