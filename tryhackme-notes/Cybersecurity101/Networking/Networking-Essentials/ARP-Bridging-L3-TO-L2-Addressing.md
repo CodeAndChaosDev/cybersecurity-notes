@@ -33,3 +33,13 @@ This summary outlines how hosts communicate in a network using IP packets and MA
 
 ## Conclusion 
 Understanding the interaction between IP addresses, MAC addresses, and ARP is crucial for effective communication between devices in a network. ARP facilitates the necessary translations for devices to communicate directly over Layer 2 and Layer 3.
+
+# Try Hack Me Write Up
+
+- Q: What is the destination MAC address used in an ARP Request?
+
+- A: ff:ff:ff:ff:ff:ff
+
+- Q: In the example above, what is the MAC address of 192.168.66.1?
+
+- A: 44:df:65:d8:fe:6c
