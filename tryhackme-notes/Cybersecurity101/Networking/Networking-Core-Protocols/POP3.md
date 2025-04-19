@@ -32,3 +32,23 @@ This content explains how to download an email using the Post Office Protocol ve
 
 ## Conclusion 
 The document outlines how POP3 is utilized for retrieving emails, the commands involved, and the security risks associated with monitoring network traffic during the session.
+
+# Try Hack Me Solution
+
+- Q:Looking at the traffic exchange, what is the name of the POP3 server running on the remote server?
+
+- A:Dovecot
+
+- Q:Use telnet to connect to 10.10.158.215’s POP3 server. What is the flag contained in the fourth message?
+
+- A: THM{TELNET_RETR_EMAIL}
+
+- C: 
+```bash
+telnet MACHINE_IP 110
+AUTH
+USER linda
+PASS Pa$$123
+
+RETR 4
+```
