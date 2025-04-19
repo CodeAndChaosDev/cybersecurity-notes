@@ -39,3 +39,14 @@ In this task, we will learn how to find network services that are actively liste
 ## Conclusion 
 
 In summary, the Nmap options provide various methods to scan and identify open TCP and UDP ports. The different scanning techniques, such as the TCP connect scan and the SYN scan, help in detecting potentially active services while considering stealth and thoroughness. Use the appropriate option depending on your specific needs in discovering network services.
+
+# Answers
+
+- Q: How many TCP ports are open on the target system at 10.10.181.16?
+- A: 6
+- C: nmap -sT 10.10.181.16
+
+- Q: Find the listening web server on 10.10.181.16 and access it with your browser. What is the flag that appears on its main page?
+- A: THM{SECRET_PAGE_38B9P6} 
+- C: nmap -F 10.10.181.16
+Check for 10.10.181.16:8008
