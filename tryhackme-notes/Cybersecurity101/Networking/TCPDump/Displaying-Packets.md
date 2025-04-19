@@ -60,3 +60,11 @@ Tcpdump provides various options to customize the display of captured packets, m
 | tcpdump -A  | Print packets as ASCII encoding   | 
 | tcpdump -xx | Display packets in hexadecimal    | 
 | tcpdump -X  | Show packets in hex and ASCII     |
+
+# Answers
+
+- Q:What is the MAC address of the host that sent an ARP request?
+
+- A:52:54:00:7c:d3:5b
+
+- C:tcpdump -r traffic.pcap arp -e 
