@@ -28,3 +28,9 @@ When managing emails on one device, the Post Office Protocol version 3 (POP3) is
 
 ## Conclusion: 
 IMAP provides a more flexible way to handle emails across different devices compared to POP3. The ability to keep emails synchronized makes it essential for users who frequently switch between various email clients. The use of telnet to connect to an IMAP server allows users to interactively manage their emails, ensuring efficient communication.
+
+# Try Hack Me Answers
+
+- Q: What IMAP command retrieves the fourth email message?
+
+- A: FETCH 4 body []
