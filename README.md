@@ -6,6 +6,8 @@ This repo contains my journey through Security+ prep and TryHackMe labs.
 - Network Security
 - Authentication
 - Encryption
+- Cryptography
+
 
 ## 🔒 TryHackMe Write-Ups
 - Pre-Security Path
