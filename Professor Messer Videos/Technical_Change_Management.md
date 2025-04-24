@@ -22,31 +22,31 @@
 - To minimize disruption, IT professionals typically schedule changes during non-production hours when fewer users are active.
 - In 24x7 operational environments, strategies such as switching to secondary systems for updates can help avoid downtime.
 
-Rebooting Systems Post-Change
+## Rebooting Systems Post-Change
 
 - Rebooting may be necessary after implementing changes to ensure new configurations take effect.
 - This can involve restarting the entire operating system or just specific services, depending on the nature of the change.
 - Understanding the reboot requirements helps prepare for scenarios such as power outages and ensures systems can recover properly.
 
-Managing Legacy Applications
+## Managing Legacy Applications
 
 - Legacy applications pose unique challenges during the Change Control process due to their long-standing use and lack of current support.
 - These applications often come with warnings against making changes, as they may not be well understood by current staff.
 - By documenting these legacy systems, IT professionals can bring them into the support cycle, improving overall management and understanding.
 
-Dependencies in Change Control
+## Dependencies in Change Control
 
 - Dependencies complicate the Change Control process, as changes to one application may necessitate updates to others.
 - For instance, updating firewall management software may require prior updates to the firewalls themselves.
 - This interconnectedness means that a seemingly simple change can escalate into a broader update across multiple systems.
 
-Importance of Documentation
+## Importance of Documentation
 
 - Continuous documentation is vital in the Change Control process to keep records current and accurate amidst frequent changes.
 - Documentation updates may include network configurations, IP addresses, and procedures for managing new applications.
 - Version Control systems are often employed to track changes and facilitate easy reversion to previous configurations if issues arise.
 
-Version Control and Change Management
+## Version Control and Change Management
 
 - Version Control plays a crucial role in managing changes, allowing for detailed tracking of modifications across systems.
 - Some applications and operating systems have built-in Version Control, while others may require third-party solutions for effective management.
