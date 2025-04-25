@@ -10,6 +10,8 @@ HTTP messages are packets of data exchanged between a user (the client) and a we
 
 • HTTP Responses: Sent by the server in reply to user requests. 
 
+![alt text](image-1.png)
+
 2. Message Structure: 
 
 • Start Line: Indicates the type of message and specific handling instructions. 
@@ -30,3 +32,11 @@ HTTP messages are packets of data exchanged between a user (the client) and a we
 
 ## Conclusion: 
 A clear grasp of HTTP messages is fundamental for effective web application development and maintenance, ensuring seamless user interaction and secure data handling.
+
+# Questions and Answers Try Hack Me
+
+- Q: Which HTTP message is returned by the web server after processing a client's request?
+- A: HTTP response
+
+- Q: What follows the headers in an HTTP message?
+- A: Empty Line
