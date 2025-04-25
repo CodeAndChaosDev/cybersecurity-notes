@@ -30,3 +30,17 @@ This content draws an analogy between a web application and a planet, illustrati
 
 ## Conclusion: 
 The successful delivery of a web application involves both visible Front End components like HTML, CSS, and JavaScript, and hidden Back End components such as databases and WAFs. This foundation will be elaborated on in future discussions.
+
+# Try Hack Me Questions
+
+- Q: Which component on a computer is responsible for hosting and delivering content for web applications?
+
+- A: web server
+
+- Q: Which tool is used to access and interact with web applications?
+
+- A: web browser
+
+- Q: Which component acts as a protective layer, filtering incoming traffic to block malicious attacks, and ensuring the security of the the web application?
+
+- A: web application firewall
