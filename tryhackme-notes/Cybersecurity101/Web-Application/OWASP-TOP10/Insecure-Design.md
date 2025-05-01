@@ -21,3 +21,8 @@ Fixing insecure design vulnerabilities often requires extensive redevelopment. T
 
 ## Practical Example Try Hack Me
 Navigate to http://MACHINE_IP:85 and access joseph's account. Identify the weakness in its password reset process and consider how it can be exploited.
+
+Now This Challenge is based on the Insecure Design Flaw, which basically means we can bruteforce some sort of feature in a website that grant us access to something. In this case,
+we are allowed to bruteforce the reset password feature, and by choosing the color, we can easily guess what color is it. In this case was green.
+
+Getting the new password and entering the account we get: THM{Not_3ven_c4tz_c0uld_sav3_U!}.
