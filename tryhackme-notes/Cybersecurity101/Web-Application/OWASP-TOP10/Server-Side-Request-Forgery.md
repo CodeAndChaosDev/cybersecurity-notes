@@ -30,3 +30,8 @@ Server-Side Request Forgery (SSRF) is a security vulnerability where attackers m
 
 ## Conclusion 
 To better understand and exploit SSRF vulnerabilities, visit http://MACHINE_IP:8087/ and locate the admin area as a targeted objective. Follow the specific instructions provided to access restricted areas of the website.
+
+# Try Hack me Challenge
+
+So this challenge is fun. You have to use burp suite to do SSRF. We stop the request while downloading the cv. This way we can change the server to our machine ip.
+In a terminal we use: nc -lvp 8030, and in burpsuite we change the server address to: MACHINE_IP:8030 and forward the request. This way we can get the flag. 
