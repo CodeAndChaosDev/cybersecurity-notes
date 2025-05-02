@@ -37,4 +37,7 @@ So this challenge is fun. You have to use burp suite to do SSRF. We stop the req
 In a terminal we use: nc -lvp 8030, and in burpsuite we change the server address to: MACHINE_IP:8030 and forward the request. This way we can get the flag. 
 
 Now for the last challenge, i couldnt figure out how to use burp to get it.. now what i did was get the url for the server where we download the pdf from. Then i changed server to localhost:8087/admin%23%&id=75482342 . the %23% represents the hash symbol in URLs. Basically this is obfuscation.
+![alt text](image-5.png)
 This allows us to have access to the admin where we find the flag:  thm{c4n_i_haz_flagz_plz?}
+
+![alt text](image-4.png)
