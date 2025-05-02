@@ -18,3 +18,11 @@ Key Points
 
 ## Conclusion 
 Each type of incident impacts victims differently. What may be catastrophic for one organization could be less damaging for another, depending on the context. For instance, a data leak might not affect XYZ Corp. significantly, but a Denial of Service attack could lead to substantial losses. Understanding these types of incidents is crucial for effective cyber security management.
+
+# Try Hack Me Responses
+
+- Q: A user's system got compromised after downloading a file attachment from an email. What type of incident is this?
+- A: malware infection
+
+- Q: What type of incident aims to disrupt the availability of an application?
+- A: Denial of service
