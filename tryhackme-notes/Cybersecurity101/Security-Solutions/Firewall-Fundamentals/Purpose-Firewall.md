@@ -1,0 +1,5 @@
+# Firewalls and Their Function 
+
+Security guards are commonly seen at the entrances of malls, banks, and homes to monitor who enters and exits these places. Their role is to prevent unauthorized access, acting as a barrier. 
+
+Similarly, in the digital world, there is a lot of data flowing between our devices and the Internet. A potential risk exists if someone intercepts this data without being detected. To protect our devices, we use a firewall, which checks the incoming and outgoing data traffic. The firewall functions like a security guard, ensuring that only authorized information is allowed in or out. Users can set rules for the firewall to filter traffic based on these guidelines. Modern firewalls offer advanced features beyond simple rule-based filtering, enhancing protection for devices and networks. Upcoming discussions will cover various types of firewalls and include practical demonstrations.
