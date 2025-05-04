@@ -276,3 +276,7 @@ Web shells exploit web server vulnerabilities, enabling attackers to execute com
 
 - Q: Using a web shell, exploit the unrestricted file upload vulnerability and get a shell. What is the content of the flag saved in the / directory?
 
+- A: THM{202bb14ed12120b31300cfbbbdd35998786b44e5}
+
+- C: For this one we used the p0wny-shell, accessing /uploads/shell.php i get the following:
+![alt text](image-3.png)
