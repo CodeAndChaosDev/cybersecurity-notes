@@ -1,0 +1,3 @@
+# Adversary Capabilities 
+
+Capability refers to the skills, tools, and techniques an adversary employs during an event, focusing on their tactics, techniques, and procedures (TTPs). This includes a range of attack methods, from simple password guessing to advanced malware creation. Capability capacity encompasses the vulnerabilities that can be exploited by these skills. An adversary's arsenal consists of the combined capabilities available to them. Required capabilities may include skills in developing malware or phishing emails or access to malicious services.
